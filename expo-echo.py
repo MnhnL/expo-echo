@@ -4,7 +4,7 @@ import pprint
 
 from graphqlclient import GraphQLClient
 
-from config import API_URL, API_TOKEN
+from config import EXPO_API_URL, EXPO_API_TOKEN
 
 def query(q, q_args, params):
     q_args_int = q_args.format(**params)
@@ -31,9 +31,9 @@ class Event:
         from pprint import pformat
         return pformat(vars(self))
 
-client = GraphQLClient(API_URL)
+client = GraphQLClient(EXPO_API_URL)
 
-client.inject_token(f'Bearer {API_TOKEN}')
+client.inject_token(f'Bearer {EXPO_API_TOKEN}')
 
 today = datetime.date.today()
 today_iso = today.isoformat()

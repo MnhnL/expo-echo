@@ -1,2 +1,2 @@
-API_URL = "https://booking.mnhn.lu/api/v2/graphql"
-API_TOKEN = ""
+EXPO_API_URL = "https://booking.mnhn.lu/api/v2/graphql"
+EXPO_API_TOKEN = ""
